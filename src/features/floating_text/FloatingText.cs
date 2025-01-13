@@ -33,7 +33,7 @@ public partial class FloatingText : Node2D
 
     private void PlayFloatEffect()
     {
-        Vector2 targetPosition = Position + new Vector2(0, -100);
+        Vector2 targetPosition = Position + new Vector2(0, -15); //TODO: Set variable amount to move
 
         Tween tween = GetTree().CreateTween();
         tween.TweenProperty(this, PropertyName.Position.ToString(), targetPosition, Duration);
